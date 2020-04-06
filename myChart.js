@@ -17,6 +17,11 @@ async function fetchData() {
     if (response.status == 200) {
         var fetchedData = await response.json();
         console.log(fetchedData);
+
+        var data = getValues(fetchedData);
+        var labels = getLabels(fetchedData);
+        var countryName = getCountryName(fetchedData);
+        renderChart(data, labels, countryName);
     }
     function getValues(data) {
         var vals = data[1].sort((a, b) => a.date - b.date).map(item => item.value);
