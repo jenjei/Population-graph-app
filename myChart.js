@@ -32,4 +32,21 @@ async function fetchData() {
         var countryName = data[1][0].country.value;
         return countryName;
     }
+    function renderChart(data, labels, countryName) {
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        // Draw new chart
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Population, ' + countryName,
+                    data: data,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                }]
+            }
+        });
+    }
 }
