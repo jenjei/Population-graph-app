@@ -4,6 +4,7 @@
 <head>
     <meta charset='UTF-8'>
     <title>Population Graph app</title>
+    <script defer src='./myChart.js'></script>
 </head>
 
 <body>
@@ -13,13 +14,6 @@
     <p>
         <button class='button' id='renderBtn'>Render population graph</button>
     </p>
-    <script>
-        function logCountryCode () {
-            var countryCode = document.getElementById('country').value;
-            console.log(countryCode);
-        }
-        document.getElementById('renderBtn').addEventListener('click', logCountryCode);
-    </script>
 </body>
 
 </html>
