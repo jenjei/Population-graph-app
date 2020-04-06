@@ -49,7 +49,7 @@ async function fetchData() {
                     label: 'Population, ' + countryName,
                     data: data,
                     borderColor: 'rgba(75, 192, 192, 1)',
-                    backgroundColor: 'rrgba(256, 0, 0, 0.2',
+                    backgroundColor: 'rgba(256, 0, 0, 0.2)',
                 }]
             }
         });
