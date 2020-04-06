@@ -1,4 +1,4 @@
-
+var currentChart;
 document.getElementById('renderBtn').addEventListener('click', fetchData);
 
 async function fetchData() {
@@ -36,8 +36,12 @@ async function fetchData() {
     function renderChart(data, labels, countryName) {
         var ctx = document.getElementById('myChart').getContext('2d');
 
+        if (currentChart) {
+            currentChart.destroy();
+        }
+
         // Draw new chart
-        new Chart(ctx, {
+        currentChart = new Chart(ctx, {
             type: 'line',
             data: {
                 labels: labels,
