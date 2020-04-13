@@ -64,4 +64,3 @@ function renderChart(data, labels, countryName) {
         }
     });
 }
-}
