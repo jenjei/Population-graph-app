@@ -6,3 +6,27 @@
 .container {
     width: 75vw;
 }
+body {
+    background-color: khaki;
+}
+h1 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+input {
+    margin-top: 2%;
+    border-radius: 12px;
+}
+
+button {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    color: teal;
+}
+
+canvas {
+    margin-bottom: 5%;
+}
